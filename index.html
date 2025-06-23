@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Патерн Декоратор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>☕ Патерн Декоратор</h1>
+        <p>Натискай кнопки — додавай інгредієнти до кави!</p>
+    </header>
+    <main>
+        <section class="coffee-section">
+            <h2>Збери свою каву:</h2>
+            <div class="buttons">
+                <button onclick="addMilk()">+ Молоко (+2)</button>
+                <button onclick="addSugar()">+ Цукор (+1)</button>
+                <button onclick="addVanilla()">+ Ваніль (+3)</button>
+                <button onclick="resetCoffee()">🔄 Скинути</button>
+            </div>
+            <div class="result">
+                <p><strong>Інгредієнти:</strong> <span id="ingredients">Кава</span></p>
+                <p><strong>Ціна:</strong> <span id="cost">5</span> грн</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Реалізація: Vitaliy • Патерн "Декоратор"</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
